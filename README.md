@@ -33,7 +33,7 @@ The Japanese voice acting stays. The English text works like subtitles.
 
 ## How to patch
 
-Download the zip from the [releases](https://github.com/ohabibo/chaindive-english-patch/releases) and unpack it.
+Download the zip from the [releases](https://github.com/ohabibo/chaindive-english-patch/releases) and extract all of its files into one folder: the patcher uses the patch file next to it. The patch, `ChainDive-English.xdelta`, is a standard xdelta file. It holds only our changes, no complete game files.
 
 ![The patcher window](docs/images/patcher.png)
 
@@ -43,7 +43,9 @@ Download the zip from the [releases](https://github.com/ohabibo/chaindive-englis
 
 The patcher is not code-signed, so Windows may show "Windows protected your PC". Click **More info** and then **Run anyway**.
 
-On Mac or Linux, put `ChainDive-English.cdpatch` next to `apply_patch.py` and run:
+Any other xdelta tool works as well, on any system: for example [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) in a web browser, Delta Patcher, xdelta UI, or `xdelta3 -d -s "ChainDive (Japan).iso" ChainDive-English.xdelta "ChainDive (English).iso"`. `ChainDive-English.sha1` lists the SHA-1 of the Japanese ISO and of the English one, if you want to check them.
+
+On Mac or Linux you can also use Python 3: keep `ChainDive-English.xdelta` and `ChainDive-English.sha1` next to `apply_patch.py` and run:
 
 ```
 python3 apply_patch.py "ChainDive (Japan).iso"
@@ -56,7 +58,7 @@ Questions about real hardware, compressed ISOs, saves or the patcher? See the [F
 - Project lead, translation and testing: ohabibo
 - Font for the text in pictures and videos: Barlow by Jeremy Tribby (SIL Open Font License)
 
-I am not a Japanese speaker, so I used a translation tool for this translation. It may contain mistakes. Corrections are very welcome, especially from Japanese speakers: please [open an issue](https://github.com/ohabibo/chaindive-english-patch/issues) and quote the line.
+I am not a Japanese speaker. The game's text was translated from Japanese with Claude, an AI model made by Anthropic, and I tested the English in the game. The spoken lines in the opening and ending movies have no text in the game, so they were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). A translation made this way can contain mistakes. Corrections are very welcome, especially from Japanese speakers: please [open an issue](https://github.com/ohabibo/chaindive-english-patch/issues) and quote the line.
 
 ## Legal
 

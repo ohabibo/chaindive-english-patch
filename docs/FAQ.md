@@ -34,15 +34,23 @@ The patcher is not code-signed, so Windows does not know it yet. Click **More in
 
 ## Can I use it on Mac or Linux?
 
-Yes, with Python 3: put `ChainDive-English.cdpatch` next to `apply_patch.py` and run `python3 apply_patch.py "ChainDive (Japan).iso"`. It writes the same English ISO as the Windows patcher.
+Yes. Any xdelta tool can apply the patch, for example [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) in a web browser, or `xdelta3`. With Python 3 you can also keep `ChainDive-English.xdelta` and `ChainDive-English.sha1` next to `apply_patch.py` and run `python3 apply_patch.py "ChainDive (Japan).iso"`. Every way writes the same English ISO as the Windows patcher.
+
+## Can I use another patcher, like xdelta?
+
+Yes. `ChainDive-English.xdelta` is a standard xdelta (VCDIFF) patch, so Delta Patcher, xdelta UI, Rom Patcher JS and xdelta3 can apply it to the Japanese ISO. If a tool says the source file is wrong or a checksum does not match, your ISO is not the right dump. `ChainDive-English.sha1` lists the SHA-1 of the Japanese ISO and of the English one.
 
 ## Is the voice acting in English?
 
 No, the Japanese voices stay. The English text works like subtitles: the dialogue boxes are in English, and the spoken lines in the opening and ending movies have English subtitles.
 
-## Why is the last stage called "Title Space 12 Chars"?
+## Why is one stage called "Title Space 12 Chars"?
 
-That is a translation of the Japanese name. The developers left a placeholder there ("title space, twelve characters"), and Japanese players see it too, so the English version keeps it.
+That is a translation of the Japanese name. The stage is numbered 20, but it is the fifth one you play, right after stage 4. The developers left a placeholder name on it ("title space, twelve characters"), and Japanese players see it too, so the English version keeps it.
+
+## How was it translated?
+
+The script, the menus and the text in pictures were translated from Japanese with Claude, an AI model made by Anthropic, and tested in the game by the project lead, who does not speak Japanese. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and moments that stayed unclear have no subtitle.
 
 ## Can I share the English ISO?
 
@@ -50,4 +58,4 @@ Please do not share patched ISO files; they contain the whole game. Share the pa
 
 ## I found a mistake in the translation.
 
-The translation was made by someone who does not speak Japanese, with the help of a translation tool, so mistakes are possible. Corrections are very welcome, especially from Japanese speakers: open an issue in this repository and quote the line.
+The translation was made by someone who does not speak Japanese: the game's text was translated with Claude, an AI model made by Anthropic, and the spoken lines in the movies were transcribed with speech recognisers (see [How was it translated?](#how-was-it-translated)), so mistakes are possible. Corrections are very welcome, especially from Japanese speakers: open an issue in this repository and quote the line.
