@@ -24,9 +24,11 @@ It should: the patch only changes the game's own data, in the game's own formats
 
 None. The English version was tested with the default settings of PCSX2 2.x. If you made settings for the Japanese game, they stay: the English version looks like the same game to PCSX2.
 
-## Can I keep my Japanese save?
+## Can I keep my save from the Japanese version or from 1.0?
 
-Yes. The English version uses the same save data as the Japanese game.
+Yes. Saves on the memory card carry over: every version uses the same save data. Patch your Japanese ISO, start the new ISO with the same memory card and load your save.
+
+PCSX2 save states (quick saves) are different: a save state holds the whole game as it was in memory, so one made with the Japanese version or with 1.0 brings that version's text back, or mixes the two. Save in the game itself before you switch versions, and load that save.
 
 ## Windows says "Windows protected your PC". Is the patcher safe?
 
