@@ -50,7 +50,7 @@ That is a translation of the Japanese name. The stage is numbered 20, but it is 
 
 ## How was it translated?
 
-The script, the menus and the text in pictures were translated from Japanese with Claude, an AI model made by Anthropic, and tested in the game by the project lead, who does not speak Japanese. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and moments that stayed unclear have no subtitle.
+The project lead, who does not speak Japanese, used Claude, an AI model made by Anthropic, for the translation of the script, the menus and the text in pictures, tried to keep every line accurate to the context of its scene, and tested it in the game. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and speech that stayed unclear is marked (Inaudible).
 
 ## Can I share the English ISO?
 
@@ -58,4 +58,4 @@ Please do not share patched ISO files; they contain the whole game. Share the pa
 
 ## I found a mistake in the translation.
 
-The translation was made by someone who does not speak Japanese: the game's text was translated with Claude, an AI model made by Anthropic, and the spoken lines in the movies were transcribed with speech recognisers (see [How was it translated?](#how-was-it-translated)), so mistakes are possible. Corrections are very welcome, especially from Japanese speakers: open an issue in this repository and quote the line.
+Claude was used for the translation by someone who does not speak Japanese, who tried to keep every line accurate to the context of its scene, and the spoken lines in the movies were transcribed with speech recognisers (see [How was it translated?](#how-was-it-translated)). Mistakes are still possible: if you find an inaccuracy, please open an issue in this repository and quote the line, especially if you speak Japanese.

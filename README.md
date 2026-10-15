@@ -58,7 +58,7 @@ Questions about real hardware, compressed ISOs, saves or the patcher? See the [F
 - Project lead, translation and testing: ohabibo
 - Font for the text in pictures and videos: Barlow by Jeremy Tribby (SIL Open Font License)
 
-I am not a Japanese speaker. The game's text was translated from Japanese with Claude, an AI model made by Anthropic, and I tested the English in the game. The spoken lines in the opening and ending movies have no text in the game, so they were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). A translation made this way can contain mistakes. Corrections are very welcome, especially from Japanese speakers: please [open an issue](https://github.com/ohabibo/chaindive-english-patch/issues) and quote the line.
+I am not a Japanese speaker. I used Claude, an AI model made by Anthropic, for the translation, and tried to keep every line accurate to the context of its scene. The spoken lines in the opening and ending movies have no text in the game, so they were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). If you find an inaccuracy, please [open an issue](https://github.com/ohabibo/chaindive-english-patch/issues) and quote the line, especially if you speak Japanese.
 
 ## Legal
 
