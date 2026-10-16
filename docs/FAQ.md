@@ -46,10 +46,6 @@ Yes. `ChainDive-English.xdelta` is a standard xdelta (VCDIFF) patch, so Delta Pa
 
 No, the Japanese voices stay. The English text works like subtitles: the dialogue boxes are in English, and the spoken lines in the opening and ending movies have English subtitles.
 
-## Why is one stage called "Title Space 12 Chars"?
-
-That is a translation of the Japanese name. The stage is numbered 20, but it is the fifth one you play, right after stage 4. The developers left a placeholder name on it ("title space, twelve characters"), and Japanese players see it too, so the English version keeps it.
-
 ## How was it translated?
 
 The project lead, who does not speak Japanese, used Claude, an AI model made by Anthropic, for the translation of the script, the menus and the text in pictures, tried to keep every line accurate to the context of its scene, and tested it in the game. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and speech that stayed unclear is marked (Inaudible).
