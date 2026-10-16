@@ -1,6 +1,6 @@
 # ChainDive English Translation
 
-An unofficial English fan translation of **ChainDive** (チェインダイブ), the 2003 PlayStation 2 action game developed by Alvion and published by Sony Computer Entertainment, released only in Japan (serial SCPS-15054).
+An unofficial, AI-assisted English fan translation of **ChainDive** (チェインダイブ), the 2003 PlayStation 2 action game developed by Alvion and published by Sony Computer Entertainment, released only in Japan (serial SCPS-15054).
 
 **[Download the latest version](https://github.com/ohabibo/chaindive-english-patch/releases/latest)**
 
