@@ -48,7 +48,7 @@ No, the Japanese voices stay. The English text works like subtitles: the dialogu
 
 ## How was it translated?
 
-The project lead, who does not speak Japanese, used Claude for the translation of the script, the menus and the text in pictures, tried to keep every line accurate to the context of its scene, and tested it in the game. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and speech that stayed unclear is marked (Inaudible).
+The project lead, who does not speak Japanese, used Claude Opus 5.5 for the translation of the script, the menus and the text in pictures, tried to keep every line accurate to the context of its scene, and tested it in the game. The opening and ending movies have no text in the game for their spoken lines, so those were transcribed from the voices: Demucs and two RoFormer models (MelBand and BS) separated the voices from the music, and four speech recognisers wrote them down (Whisper large-v3 by OpenAI, Kotoba-Whisper, Anime Whisper and ReazonSpeech). Where they disagreed, the line that best fits the sound and the scene was chosen after listening, and speech that stayed unclear is marked (Inaudible).
 
 ## Can I share the English ISO?
 
